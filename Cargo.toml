@@ -1,0 +1,15 @@
+[package]
+edition = "2021"
+name = "dumdum"
+version = "0.1.0"
+authors = [ "Christian Brauner <brauner@kernel.org>" ]
+description = "A dumb coredump ('dumdum') handler"
+license-file = "LICENSE.LGPL2.1"
+repository = "https://github.com/brauner/dumdum"
+keywords = ["coredump", "elf", "linux"]
+
+[dependencies]
+libc = "0.2"
+[profile.dev]
+opt-level = 0
+debug = true
